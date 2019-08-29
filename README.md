@@ -12,9 +12,13 @@ import numpy as np
 
 from patch_handling import get_patches, get_volume
 
-
+# use a 100x100x100 single channel array.
 A = np.random.random_sample((100, 100, 100))
+
+# splits in dimension 1, 2 and 3
 divs = (2,4,2)
+
+# offset defines zero padding or overlap of the patches.
 offset = (3,4,0)
 
 print('Splitting A into', np.prod(divs), 'patches')
