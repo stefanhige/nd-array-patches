@@ -25,6 +25,10 @@ print('Splitting A into', np.prod(divs), 'patches')
 
 A_p = get_patches(A, divs, offset)
 
+# get a single patch
+# index = 0 : the first patch
+# p = get_patch(A, index, divs, offset)
+
 print(A_p.shape)
 
 A_ = get_volume(A_p, divs, offset)
